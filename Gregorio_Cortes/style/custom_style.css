@@ -1,0 +1,135 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  height: 100vh;
+  background: linear-gradient( #afb1bc 60%, #454545 80%);
+}
+ 
+a{
+  text-decoration: none;
+  color: #000
+}
+
+a:active{
+  color: #dfdfdf;
+}
+
+.background{
+  background:#afb1bc;
+  padding:15px 0 0;
+  margin:0px;
+}
+
+.company{
+  text-align:center;
+  margin: 5px auto 15px auto;
+  font-family: 'Inter',sans-serif;
+  font-size: 15px;
+  font-weight:800;
+}
+
+.logo{
+  width: 80px;
+  height: 50px;
+  margin: 0 25px;
+}
+
+.people{
+  border-radius: 25%;
+  width: 150px;
+  height: 165px;
+  margin: 0 0 10px;
+}
+
+.name{
+  font-family: 'Lexend', sans-serif;
+  margin: 5px 0 0 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.title-rif{
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.box{
+  background: linear-gradient(rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.228) );
+  width: 80vw;
+  text-align:center;
+  margin: 15px auto 20px;
+  border-radius: 8px;
+  padding: 10px;
+  /*backdrop-filter: blur(100px);*/
+}
+
+.box-option{
+  border: #000 solid 2px;
+  box-shadow: #000 0 2px 2px;
+  color: #000;
+  padding:5px 0;
+  width:80%;
+  margin: 12px auto;
+  border-radius: 8px;
+  background:#fafafa;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.box-option:hover{
+  scale:1.10;
+  background:#2480b0;
+  transition: revert;
+}
+
+.box-option:active{
+  background:#125080;
+}
+  
+.option-title{
+  text-align:center;
+}
+
+.whatsapp:hover{
+  color: #fff;
+  background-color: #25D366;
+}
+
+.whatsapp:active{
+  background:#15C355;
+  color: #fff;
+}
+
+h3 > i{
+  font-size: 45px;
+}
+
+.instagram:hover{
+  color: #fff;
+  background: #E1306C;
+}
+
+.instagram:active{
+  color: #fff;
+  background: #d1205b;
+}
+
+.web:hover{
+  color: #fff;
+  background-color: #4267B2;
+}
+
+.web:active{
+  color: #fff;
+  background-color: #3257A2;
+}
+
+
+@media screen and (max-width:280px){
+  .title{
+    font-size: 30px;
+  }
+}
