@@ -130,8 +130,8 @@ h3 > i{
 }
 
 
-@media screen and (max-width:280px){
-  .title{
+@media screen and (max-width:290px){
+  .name{
     font-size: 30px;
   }
 }
