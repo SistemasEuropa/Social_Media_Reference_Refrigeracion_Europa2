@@ -31,9 +31,9 @@ a:active{
 .company{
   font-style: italic;
   text-align:center;
-  margin: 5px auto 15px auto;
+  margin: 0 auto 5px auto;
   font-family: 'Inter',sans-serif;
-  font-size: 15px;
+  font-size: 5px;
   font-weight:800;
 }
 
@@ -47,13 +47,13 @@ a:active{
   border-radius: 25%;
   width: 150px;
   height: 165px;
-  margin: 0 0 10px;
+  margin: 0 0 0px;
 }
 
 .name{
   font-family: 'Lexend', sans-serif;
-  margin: 5px 0 0 0;
-  font-size: 35px;
+  margin: 0 0 20px;
+  font-size: 20px;
   font-weight: 700;
   font-style: normal;
 }
@@ -148,6 +148,25 @@ h3 > i{
   background-color: #3257A2;
 }
 
+footer{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo{
+  margin: 45px auto 10px 7px;
+  width: 50px;
+  height: 50px;
+}
 
 @media screen and (max-width:310px){
   .name{
@@ -160,6 +179,7 @@ h3 > i{
     margin: 0;
   }
 
+  /*
   div > a{
     width: 70px;
     height: 70px;
@@ -173,5 +193,5 @@ h3 > i{
   svg{
     font-size: 30px;
   }
-  
+  */
 }
