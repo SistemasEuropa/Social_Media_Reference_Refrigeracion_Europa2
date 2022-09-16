@@ -7,7 +7,7 @@ body{
   height: 100vh;
   background-image: url(/Imagenes_Europa/Botonera_A_Grey.svg);
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: 100vmax;
 }
  
 a{
