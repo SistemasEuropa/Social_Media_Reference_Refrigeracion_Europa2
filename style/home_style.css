@@ -5,7 +5,10 @@
 
 body{
   height: 100vh;
-  background: linear-gradient( #2480b0 60%, #232323 70%);
+  /*background: linear-gradient( #2480b0 60%, #232323 70%);
+  */
+  background-image: url(/Imagenes_Europa/Botonera\ A.svg);
+  background-repeat: no-repeat;
 }
  
 a{
