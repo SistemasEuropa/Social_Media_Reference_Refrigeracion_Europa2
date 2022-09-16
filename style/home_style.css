@@ -5,10 +5,9 @@
 
 body{
   height: 100vh;
-  /*background: linear-gradient( #2480b0 60%, #232323 70%);
-  */
-  background-image: url(/Imagenes_Europa/Botonera\ A.svg);
+  background-image: url(/Imagenes_Europa/Botonera_A_Grey.svg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
  
 a{
