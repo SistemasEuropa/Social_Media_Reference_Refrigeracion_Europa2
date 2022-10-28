@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lexend:wght@200&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/2a05ff98f9.js" crossorigin="anonymous"></script>
 </head>
-<header>
+<header id="header">
   <div class=background>
     <div class="company">
       <img class="logo" src="/Imagenes_Europa/Refrigeracion_Logo.svg" alt="Logo Refrigeracion Europa">
@@ -27,49 +27,82 @@
   </div>
 </header>
 <body>
-    <div class="body">
-      <div class="box">
-        <a href="https://wa.me/+584128431683">
-          <div class="box-option whatsapp">
-            <h3 class="option-title">
-              <i class="fa-brands fa-whatsapp"></i>
-            </h3>
-          </div>
-        </a>
-        <a href="https://goo.gl/maps/UJKR1xPkEtDqYTNE7">
-          <div class="box-option location">
-            <h3 class="option-title">
-                <i class="fa-solid fa-map-location-dot"></i>
-            </h3>
-          </div>
-        </a>
-        <a href="https://www.instagram.com/refrigeracioneuropa/?hl=en">
-          <div class="box-option instagram">
-            <h3 class="option-title">
-              <i class="fa-brands fa-instagram"></i>
-            </h3>
-          </div>
-        </a>
-        <a href="https://europa.com.ve/">
-          <div class="box-option web">
-            <h3 class="option-title">
-              <i class="fa-solid fa-globe"></i>
-            </h3>
-          </div>
-        </a>
-        <!-- <a href="#"></a>
-        <div class="box-option catalogo">
+  <div class="body" id="body">
+    <div class="box">
+      <a href="https://wa.me/+584128431683">
+        <div class="box-option whatsapp">
           <h3 class="option-title">
-            Catálogo
+            <i class="fa-brands fa-whatsapp"></i>
           </h3>
         </div>
-      </a> -->
+      </a>
+      <a href="#" id="location">
+        <div class="box-option location">
+          <h3 class="option-title">
+              <i class="fa-solid fa-map-location-dot"></i>
+          </h3>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/refrigeracioneuropa/?hl=en">
+        <div class="box-option instagram">
+          <h3 class="option-title">
+            <i class="fa-brands fa-instagram"></i>
+          </h3>
+        </div>
+      </a>
+      <a href="https://europa.com.ve/">
+        <div class="box-option web">
+          <h3 class="option-title">
+            <i class="fa-solid fa-globe"></i>
+          </h3>
+        </div>
+      </a>
+      <!-- <a href="#"></a>
+      <div class="box-option catalogo">
+        <h3 class="option-title">
+          Catálogo
+        </h3>
+      </div>
+    </a> -->
+    </div>
+  </div>
+  <div class="popup hide" id="popup">
+    <div class=background>
+      <div class="company-popup">
+        <img class="logo-popup" id="logo-popup" src="/Imagenes_Europa/Refrigeracion_Logo.svg" alt="Logo Refrigeracion Europa">
+        <!--
+        <h1 class="title">
+          Refrigeración Europa
+        </h1>
+        <p class="title-rif">
+          J-07505535-7
+        </p>
+        -->
       </div>
     </div>
-    <footer>
-      <div class="footer">
-        <img class="footer-logo" src="./Imagenes_Europa/Logo_Little.svg" alt="">
+    <div class="popup-windows">
+      <div class="popup-windows--option">
+        <a href="https://goo.gl/maps/cELF7RsDqLUeBota9">
+          <img class="popup-windows--img" src="/Imagenes_Europa/Background_Neveras.png">
+          <h4>Valencia</h4>
+        </a>
       </div>
-    </footer>
+      <div class="popup-windows--option">
+        <a href="https://goo.gl/maps/jVocZqzD8sLuQhb76">
+          <img class="popup-windows--img" src="/Imagenes_Europa/Background_Neveras.png">
+          <h4>Caracas</h4>
+        </a>
+      </div>
+    </div>
+    <div class="footer-popup">
+      <img class="footer-logo" src="./Imagenes_Europa/Logo_Little.svg" alt="">
+    </div>
+  </div>
+  <footer>
+    <div class="footer" id="footer">
+      <img class="footer-logo" src="./Imagenes_Europa/Logo_Little.svg" alt="">
+    </div>
+  </footer>
 </body>
+<script src="./script.js"></script>
 </html>
