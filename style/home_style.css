@@ -162,7 +162,7 @@ h3 > i{
 .popup{
   width: 100vw;
   height:100vh;
-  background: #727272af;
+  background: #676767b4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,7 +173,7 @@ h3 > i{
   margin: 25px 0;
   width: 70vw;
   height:50vh;
-  background: #fafafa;
+  background: #eaeaea;
   border-radius: 10px;
   box-shadow: #585858 0 5px 30px 5px;
   display:flex;
@@ -192,7 +192,8 @@ h3 > i{
   width: 100%;
   height: -webkit-fill-available;
   margin: auto;
-  box-shadow: #AAAAAA 0 5px 30px 10px;
+  background: #fafafa;
+  box-shadow: #a0a0a0 0 5px 35px 15px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   padding: 0 0 15px 0;
@@ -207,15 +208,11 @@ h3 > i{
 }
 
 .val{
-  background: url(../Imagenes_Europa/RE_VAL_FRONTAL.svg);
-  background-size: cover;
-  background-position: center;
+  width: -webkit-fill-available;
 }
 
 .ccs{
-  background: url(../Imagenes_Europa/RE_CCS_FRONTAL.svg);
-  background-size: cover;
-  background-position: center;
+  width: -webkit-fill-available;
 }
 
 .popup-windows--option > a > h4 {
@@ -268,7 +265,6 @@ footer{
     margin:auto;
     width: 90vw;
     max-width:1000px;
-    background: #fafafa;
     border-radius: 10px;
     padding: 15px 5px;
     box-shadow: #8d8d8d 0 5px 30px 5px;
