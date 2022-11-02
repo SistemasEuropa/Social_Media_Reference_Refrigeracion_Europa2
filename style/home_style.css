@@ -3,7 +3,19 @@
   margin: 0px;
 }
 
+html{
+  display: block;
+}
 
+@media only screen and (orientation:portrait){
+  html {  
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
 
 body{
   height: 100vh;
@@ -161,16 +173,17 @@ h3 > i{
 
 .popup{
   width: 100vw;
-  height:100vh;
-  background: #676767b4;
+  height: 100vh;
+  background: #454545cd;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  background-size: 100vmax;
 }
 
 .popup-windows{
-  margin: 25px 0;
+  margin: 10px 0;
   width: 70vw;
   height:50vh;
   background: #eaeaea;
@@ -238,39 +251,20 @@ footer{
 }
 
 .footer-logo{
-  margin: 0 auto;
+  margin: 25px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer-logo{
-  margin: 50px auto;
   width: 50px;
   height: 50px;
 }
 
 @media screen and (max-width:1000px){
-  
-  .popup{
-    width: 100vw;
-    height:100vh;
-    background: #adadadca;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  }
 
   .popup-windows{
     margin:auto;
     width: 90vw;
     max-width:1000px;
-    border-radius: 10px;
-    padding: 15px 5px;
-    box-shadow: #8d8d8d 0 5px 30px 5px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
   }
   
   .popup-windows--option{
@@ -290,27 +284,13 @@ footer{
 @media screen and (max-width:700px){
   
   .popup{
-    width: 100vw;
-    height:100vh;
-    background: #adadadca;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     flex-wrap: nowrap;
   }
 
   .popup-windows{
-    margin: 45px auto;
+    margin: 20px auto;
     width: 80vw;
     height: 40%;
-    max-width:1000px;
-    background: #fafafa;
-    border-radius: 10px;
-    padding: 15px 5px;
-    box-shadow: #8d8d8d 0 5px 30px 5px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     flex-flow: row wrap;
   }
   
@@ -331,24 +311,16 @@ footer{
 @media screen and (max-width:450px){
 
   .popup-windows{
-    margin: 45px auto;
+    margin: 15px auto;
     width: 90vw;
     height: 60%;
-    max-width:1000px;
-    background: #fafafa;
-    border-radius: 10px;
-    padding: 10px 5px;
-    box-shadow: #8d8d8d 0 5px 30px 5px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     flex-flow: column;
   }
   
   .popup-windows--option{
     margin: 10px auto;
     height: 45%;
-    width: 55%;
+    width: 60%;
   }
 
   .popup-windows--option > {
@@ -356,7 +328,7 @@ footer{
   }
 }
 
-@media screen and (max-width:330px){
+@media screen and (max-width:370px){
   .title{
     font-size: 30px;
   }
@@ -368,43 +340,34 @@ footer{
     max-height: 500px;
     margin: 0;
   }
-
   
   div > a{
     width: 70px;
     height: 70px;
   }
-
   
   .box-option{
     width: 70px;
     height: 70px;
   }
-  
-  svg{
-    font-size: 30px;
-  }
 
   .footer-logo{
-    margin: 50px auto;
+    margin: 10px auto;
     width: 50px;
     height: 50px;
   }
 
   .popup-windows{
-    margin: 20px auto;
+    margin: 15px auto;
     width: 90vw;
-    height: 70%;
+    height: 65%;
+    justify-content: space-around;
   }
   
   .popup-windows--option{
-    margin: 15px auto 0;
+    margin: 0;
     height: 40%;
     width: 80%;
-  }
-
-  .popup-windows--option > {
-    box-shadow: #9d9d9d 0 0 10px;
   }
 
 }
