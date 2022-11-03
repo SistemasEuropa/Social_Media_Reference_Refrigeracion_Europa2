@@ -152,23 +152,27 @@ h3 > i{
 }
 
 .instagram:hover{
-  color: #fff;
   background: #E1306C;
 }
 
 .instagram:active{
-  color: #fff;
   background: #d1205b;
 }
 
 .web:hover{
-  color: #fff;
   background-color: #4267B2;
 }
 
 .web:active{
-  color: #fff;
   background-color: #3257A2;
+}
+
+.catalog:hover{
+  background-color: #ea7500 ;
+}
+
+.catalog:active{
+  background-color: #da6000;
 }
 
 .popup{
