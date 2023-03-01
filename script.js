@@ -54,9 +54,10 @@ let popup_whatsapp = document.getElementById("popup-ws")
 let body = document.getElementById("body");
 let footer = document.getElementById("footer")
 let header = document.getElementById("header");
-let logo_popup = document.getElementById("logo-popup");
+let logo_popup_location = document.getElementById("logo-popup");
+let logo_popup_whatsapp = document.getElementById("logo-popup-w");
 
 btn_location.addEventListener("click", show_popup_location);
-logo_popup.addEventListener("click", hide_popup_location);
+logo_popup_location.addEventListener("click", hide_popup_location);
 btn_whatsapp.addEventListener("click", show_popup_whatsapp);
-logo_popup.addEventListener("click",hide_popup_whatsapp);
+logo_popup_whatsapp.addEventListener("click",hide_popup_whatsapp);
