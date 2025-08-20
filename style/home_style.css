@@ -25,9 +25,11 @@
 body {
     body {
     background-image: url('Imagenes_Europa/fondo.png');
-    background-size: cover;     
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0; 
 }
 
 /* Animated background particles */
