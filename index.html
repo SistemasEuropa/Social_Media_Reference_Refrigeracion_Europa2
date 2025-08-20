@@ -1,144 +1,126 @@
 <!DOCTYPE html>
-<html lang="en" class="html">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Refrigeración Europa C.A.</title>
-  <link rel="stylesheet" href="style/home_style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lexend:wght@200&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/2a05ff98f9.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refrigeración Europa C.A.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/home_style.css">
 </head>
-<header id="header">
-  <div class="background">
-    <div class="company">
-      <img class="logo" src="/Imagenes_Europa/Refrigeracion_Logo.svg" alt="Logo Refrigeracion Europa">
-      <!--
-      <h1 class="title">
-        Refrigeración Europa
-      </h1>
-      <p class="title-rif">
-        J-07505535-7
-      </p>
-      -->
+<body>
+    <div class="background-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
     </div>
-  </div>
-</header>
-<body id="all">
-  <div class="body" id="body">
-    <div class="box">
-      <a href="#" id="whatsapp" title="Números de Contacto" alt="Whatsapp Icon">
-        <div class="box-option whatsapp">
-          <i class="fa-brands fa-whatsapp"></i>
-          <h3 class="option-title">
-            Whatsapp
-          </h3>
+
+    <header class="header">
+        <div class="logo-container">
+            <img class="logo" src="/Imagenes_Europa/Refrigeracion_Logo.svg" alt="Logo Refrigeración Europa">
         </div>
-      </a>
-      <a href="#" id="location" title="Ubicaciones" alt="Maps Icon">
-        <div class="box-option location">
-          <i class="fa-solid fa-map-location-dot"></i> 
-          <h3 class="option-title">
-              Ubicación
-            </h3>
+    </header>
+
+    <main class="main-container">
+        <div class="options-grid">
+            <a href="#" class="option-card" id="whatsapp-btn">
+                <div class="option-button whatsapp">
+                    <i class="fa-brands fa-whatsapp option-icon"></i>
+                    <h3 class="option-title">WhatsApp</h3>
+                </div>
+            </a>
+
+            <a href="#" class="option-card" id="location-btn">
+                <div class="option-button location">
+                    <i class="fa-solid fa-map-location-dot option-icon"></i>
+                    <h3 class="option-title">Ubicación</h3>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/refrigeracioneuropa/?hl=en" class="option-card" target="_blank">
+                <div class="option-button instagram">
+                    <i class="fa-brands fa-instagram option-icon"></i>
+                    <h3 class="option-title">Instagram</h3>
+                </div>
+            </a>
+
+            <a href="https://europa.com.ve/" class="option-card" target="_blank">
+                <div class="option-button web">
+                    <i class="fa-solid fa-globe option-icon"></i>
+                    <h3 class="option-title">Página Web</h3>
+                </div>
+            </a>
+
+            <a href="./Imagenes_Europa/Conoce a Refrigeración Europa.pdf" class="option-card" download="Conoce a Refrigeración Europa CA.pdf">
+                <div class="option-button catalog">
+                    <i class="fa-solid fa-users option-icon"></i>
+                    <h3 class="option-title">Conócenos</h3>
+                </div>
+            </a>
         </div>
-      </a>
-      <a href="https://www.instagram.com/refrigeracioneuropa/?hl=en" title="Instagram" alt="Instagram Icon">
-        <div class="box-option instagram">
-          <i class="fa-brands fa-instagram"></i>
-          <h3 class="option-title">
-            Instagram
-          </h3>
+    </main>
+
+    <!-- Location Modal -->
+    <div class="modal" id="location-modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-location">&times;</button>
+            <div class="modal-header">
+                <img class="modal-logo" src="/Imagenes_Europa/Refrigeracion_Logo.svg" alt="Logo Refrigeración Europa">
+                <h2>Nuestras Ubicaciones</h2>
+            </div>
+            <div class="modal-options">
+                <a href="https://goo.gl/maps/cELF7RsDqLUeBota9" class="modal-option" target="_blank">
+                    <div class="modal-option-content">
+                        <img src="/Imagenes_Europa/Val_Frontal_R.jpg" alt="Valencia">
+                        <h4>Valencia</h4>
+                        <p>Visítanos en nuestra sede de Valencia</p>
+                    </div>
+                </a>
+                <a href="https://goo.gl/maps/jVocZqzD8sLuQhb76" class="modal-option" target="_blank">
+                    <div class="modal-option-content">
+                        <img src="/Imagenes_Europa/Ccs_Frontal_R.jpg" alt="Caracas">
+                        <h4>Caracas</h4>
+                        <p>Visítanos en nuestra sede de Caracas</p>
+                    </div>
+                </a>
+            </div>
         </div>
-      </a>
-      <a href="https://europa.com.ve/" title="Página Web" alt="Web Icon">
-        <div class="box-option web">
-          <i class="fa-solid fa-globe"></i>
-          <h3 class="option-title">
-            Web
-          </h3>
+    </div>
+
+    <!-- WhatsApp Modal -->
+    <div class="modal" id="whatsapp-modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-whatsapp">&times;</button>
+            <div class="modal-header">
+                <img class="modal-logo" src="/Imagenes_Europa/Refrigeracion_Logo.svg" alt="Logo Refrigeración Europa">
+                <h2>Contáctanos por WhatsApp</h2>
+            </div>
+            <div class="modal-options">
+                <a href="https://wa.me/+584128431683" class="modal-option" target="_blank">
+                    <div class="modal-option-content whatsapp">
+                        <i class="fa-brands fa-whatsapp option-icon" style="color: #25D366; font-size: 3rem; margin-bottom: 1rem;"></i>
+                        <h4>Valencia, Carabobo</h4>
+                        <p>+58 412 843 1683</p>
+                    </div>
+                </a>
+                <a href="https://wa.me/+584244653560" class="modal-option" target="_blank">
+                    <div class="modal-option-content whatsapp">
+                        <i class="fa-brands fa-whatsapp option-icon" style="color: #25D366; font-size: 3rem; margin-bottom: 1rem;"></i>
+                        <h4>Los Ruices, Caracas</h4>
+                        <p>+58 424 465 3560</p>
+                    </div>
+                </a>
+            </div>
         </div>
-      </a>
-      <a href="./Imagenes_Europa/Conoce a Refrigeración Europa.pdf" download="Conoce a Refrigeración Europa CA.pdf" title="Presentación" alt="Us Icon">
-        <div class="box-option catalog">
-          <i class="fa-solid fa-users"></i>
-          <h3 class="option-title">
-            Conócenos
-          </h3>
-        </div>
-      </a>
-      <!-- <a href="#"></a>
-      <div class="box-option catalogo">
-        <h3 class="option-title">
-          Catálogo
-        </h3>
-      </div>
-    </a> -->
     </div>
-  </div>
-  <div class="popup hide" id="popup">
-    <div class=background>
-      <div class="company-popup">
-        <img class="logo-popup" id="logo-popup" src="/Imagenes_Europa/Refrigeracion_Logo.svg" alt="Logo Refrigeracion Europa">
-      </div>
-    </div>
-    <div class="popup-windows">
-      <div class="popup-windows--option">
-        <a href="https://goo.gl/maps/cELF7RsDqLUeBota9">
-          <img class="popup-windows--img val" src="/Imagenes_Europa/Val_Frontal_R.jpg">
-          <h4>Valencia</h4>
-        </a>
-      </div>
-      <div class="popup-windows--option">
-        <a href="https://goo.gl/maps/jVocZqzD8sLuQhb76">
-          <img class="popup-windows--img ccs" src="/Imagenes_Europa/Ccs_Frontal_R.jpg">
-          <h4>Caracas</h4>
-        </a>
-      </div>
-    </div>
-    <div class="footer-popup">
-      <img class="footer-logo" src="./Imagenes_Europa/Logo_Little.svg" alt="">
-    </div>
-  </div>
-  <div class="popup hide" id="popup-ws">
-    <div class=background>
-      <div class="company-popup">
-        <img class="logo-popup" id="logo-popup-w" src="/Imagenes_Europa/Refrigeracion_Logo.svg" alt="Logo Refrigeracion Europa">
-      </div>
-    </div>
-    <div class="popup-windows">
-      <div class="popup-windows--option">
-        <a href="https://wa.me/+584128431683" title="Whatsapp" alt="Whatsapp Icon">
-          <div class="box-option whatsapp popup-w">
-            <i class="fa-brands fa-whatsapp"></i>
-            <h3 class="option-title">
-              Valencia, Carabobo
-            </h3>
-          </div>
-        </a>
-      </div>
-      <div class="popup-windows--option">
-        <a href="https://wa.me/+584244653560" title="Whatsapp" alt="Whatsapp Icon">
-          <div class="box-option whatsapp popup-w">
-            <i class="fa-brands fa-whatsapp"></i>
-            <h3 class="option-title">
-              Los Ruices, Caracas
-            </h3>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="footer-popup">
-      <img class="footer-logo" src="./Imagenes_Europa/Logo_Little.svg" alt="">
-    </div>
-  </div>
-  <footer>
-    <div class="footer" id="footer">
-      <img class="footer-logo" src="./Imagenes_Europa/Logo_Little.svg" alt="">
-    </div>
-  </footer>
+
+    <footer class="footer">
+        <img class="footer-logo" src="./Imagenes_Europa/Logo_Little.svg" alt="Refrigeración Europa">
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>
