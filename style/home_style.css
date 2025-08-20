@@ -23,11 +23,11 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-attachment: fixed;
-    overflow-x: hidden;
+    body {
+    background-image: url('Imagenes_Europa/fondo.png');
+    background-size: cover;     
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 /* Animated background particles */
