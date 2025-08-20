@@ -1,63 +1,74 @@
-let sleep = ms => {
-    return new Promise (resolve=>setTimeout(resolve, ms));
+// Modal functionality
+const locationBtn = document.getElementById('location-btn');
+const whatsappBtn = document.getElementById('whatsapp-btn');
+const locationModal = document.getElementById('location-modal');
+const whatsappModal = document.getElementById('whatsapp-modal');
+const closeLocation = document.getElementById('close-location');
+const closeWhatsapp = document.getElementById('close-whatsapp');
+
+function openModal(modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
 
-function hide_index(){
-    sleep(400).then(()=>{
-        body.classList.add("hide");
-        header.classList.add("hide");
-        footer.classList.add("hide");
+function closeModal(modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+locationBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal(locationModal);
+});
+
+whatsappBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal(whatsappModal);
+});
+
+closeLocation.addEventListener('click', () => closeModal(locationModal));
+closeWhatsapp.addEventListener('click', () => closeModal(whatsappModal));
+
+// Close modal when clicking outside
+locationModal.addEventListener('click', (e) => {
+    if (e.target === locationModal) {
+        closeModal(locationModal);
+    }
+});
+
+whatsappModal.addEventListener('click', (e) => {
+    if (e.target === whatsappModal) {
+        closeModal(whatsappModal);
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeModal(locationModal);
+        closeModal(whatsappModal);
+    }
+});
+
+// Add loading animation on page load
+window.addEventListener('load', () => {
+    document.body.classList.remove('loading');
+});
+
+// Add intersection observer for animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.animationPlayState = 'running';
+        }
     });
-}
+}, observerOptions);
 
-function show_index(){
-    sleep(400).then(()=>{
-        body.classList.remove("hide");
-        header.classList.remove("hide");
-        footer.classList.remove("hide");
-    });
-}
-
-function show_popup_location(){
-    all_body.classList.remove("reverse-blur")
-    all_body.classList.add("blur");
-    hide_index();
-    popup_location.classList.remove("hide");
-};
-
-function hide_popup_location(){
-    all_body.classList.remove("blur");
-    all_body.classList.add("reverse-blur");
-    show_index();
-    popup_location.classList.add("hide");
-};
-
-function show_popup_whatsapp(){
-    all_body.classList.remove("reverse-blur")
-    all_body.classList.add("blur");
-    hide_index();
-    popup_whatsapp.classList.remove("hide");
-};
-
-function hide_popup_whatsapp(){
-    all_body.classList.remove("blur");
-    all_body.classList.add("reverse-blur");
-    show_index();
-    popup_whatsapp.classList.add("hide");
-};
-
-let all_body = document.getElementById("all");
-let btn_location = document.getElementById("location");
-let btn_whatsapp = document.getElementById("whatsapp");
-let popup_location = document.getElementById("popup");
-let popup_whatsapp = document.getElementById("popup-ws")
-let body = document.getElementById("body");
-let footer = document.getElementById("footer")
-let header = document.getElementById("header");
-let logo_popup_location = document.getElementById("logo-popup");
-let logo_popup_whatsapp = document.getElementById("logo-popup-w");
-
-btn_location.addEventListener("click", show_popup_location);
-logo_popup_location.addEventListener("click", hide_popup_location);
-btn_whatsapp.addEventListener("click", show_popup_whatsapp);
-logo_popup_whatsapp.addEventListener("click",hide_popup_whatsapp);
+document.querySelectorAll('.option-card').forEach(card => {
+    observer.observe(card);
+});
