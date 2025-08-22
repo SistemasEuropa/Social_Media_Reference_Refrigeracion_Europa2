@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary-color: #0C3289;
-    --primary-light: #2480b0;
-    --primary-dark: #125080;
+    --primary-color: #004184;
+    --primary-light: #5395e8;
+    --primary-dark: #06045a;
     --accent-color: #25D366;
     --instagram-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     --surface-color: rgba(255, 255, 255, 0.95);
