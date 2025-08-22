@@ -185,12 +185,13 @@ body {
     font-size: 2rem;
     margin-bottom: 0.5rem;
     transition: var(--transition);
+    color: var(--primary-color);
 }
 
 .option-title {
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: var(--primary-color);
     line-height: 1.3;
 }
 
