@@ -424,7 +424,7 @@ body {
     }
 
     .options-grid {
-        grid-template-columns: 1fr; /* apilado en móvil */
+        grid-template-columns: 2fr; /* apilado en móvil */
     }
 
     .modal-content {
