@@ -119,7 +119,7 @@ body {
     box-shadow: var(--shadow-medium);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1.5rem;
     animation: fadeInUp 1s ease-out 0.3s both;
 }
@@ -243,6 +243,16 @@ body {
 
 .catalog:hover .option-icon,
 .catalog:hover .option-title {
+    color: white;
+}
+
+.gallery:hover {
+    background: #9b59b6;
+    color: white;
+}
+
+.gallery:hover .option-icon,
+.gallery:hover .option-title {
     color: white;
 }
 
@@ -371,6 +381,12 @@ body {
 }
 
 /* Responsive design */
+@media (max-width: 1024px) {
+    .options-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .main-container {
         max-width: 480px;
