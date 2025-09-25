@@ -1,3 +1,5 @@
+este es el ccs
+
 * {
     margin: 0;
     padding: 0;
@@ -119,7 +121,7 @@ body {
     box-shadow: var(--shadow-medium);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ajustado */
+    grid-template-columns: repeat(6, 1fr);
     gap: 1.5rem;
     animation: fadeInUp 1s ease-out 0.3s both;
 }
@@ -381,6 +383,12 @@ body {
 }
 
 /* Responsive design */
+@media (max-width: 1024px) {
+    .options-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .main-container {
         max-width: 480px;
@@ -424,7 +432,7 @@ body {
     }
 
     .options-grid {
-        grid-template-columns: 2fr; /* apilado en móvil */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .modal-content {
